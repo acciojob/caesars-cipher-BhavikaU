@@ -35,6 +35,7 @@ function rot13(str) {
 // let str=ARA
 	let output = "";  
 	// ""+"N"=>N;
+	str = str.toUpperCase();
 	for(int i=0; i<str.length; i++)
 	{
 		output+ = lookup[str[i]];
