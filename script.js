@@ -38,8 +38,16 @@ function rot13(str) {
 	str = str.toUpperCase();
 	for(int i=0; i<str.length; i++)
 	{
-		output+ = lookup[str[i]];
+		if(lookup[str[i]])
+		{
+			output+ = lookup[str[i]];
 		// str[0]=>"A"
+		}
+		else
+		{
+			output+ = str[i];
+		}
+		
 	}
 	return output;
  
