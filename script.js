@@ -36,7 +36,7 @@ function rot13(str) {
 	let output = "";  
 	// ""+"N"=>N;
 	str = str.toUpperCase();
-	for(int i=0; i<str.length; i++)
+	for(let i=0; i<str.length; i++)
 	{
 		if(lookup[str[i]])
 		{
